@@ -22,10 +22,10 @@ unless you know what you're doing... :)
  */
 window.AgidSpidEnter.prototype.config = {
     version: '{{ VERSION }}',
-    assetsBaseUrl: 'https://rawgit.com/srescio/spid-smart-button/issue-2/separate-html-js/',
-    stylesheetUrl: 'https://rawgit.com/srescio/spid-smart-button/issue-2/separate-html-js/prod/agid-spid-enter.min.{{ VERSION }}.css',
-    providersEndpoint: 'https://rawgit.com/srescio/spid-smart-button/issue-2/separate-html-js/src/data/spidProviders.json',
-    localisationEndpoint: 'https://rawgit.com/srescio/spid-smart-button/issue-2/separate-html-js/src/data/spidI18n.json'
+    assetsBaseUrl: '/vendor/spid-auth/',
+    stylesheetUrl: '/vendor/spid-auth/css/agid-spid-enter.min.{{ VERSION }}.css',
+    providersEndpoint: '/spid/providers',
+    localisationEndpoint: '/vendor/spid-auth/data/spidI18n.json'
 };
 
 /*
