@@ -135,7 +135,7 @@ window.AgidSpidEnter.prototype.tpl = {
     nonHaiSpid: function () {
         return [
             '<div class="Prose">',
-				'<h2 class="u-text-h2 u-margin-bottom-xxs">Richiedi SPID</h2>',
+				'<h2 class="u-text-h2 u-margin-bottom-xxs" id="agid-infomodal-title">Richiedi SPID</h2>',
                 '<p>',
                     'Per richiedere e ottenere le tue credenziali SPID, il Sistema Pubblico di Identità Digitale, devi esser maggiorenne.',
                 '</p>',
@@ -162,7 +162,7 @@ window.AgidSpidEnter.prototype.tpl = {
     cosaSpid: function () {
         return [
             '<div class="Prose">',
-				'<h2 class="u-text-h2 u-margin-bottom-xs">SPID</h2>',
+				'<h2 class="u-text-h2 u-margin-bottom-xs" id="agid-infomodal-title">SPID</h2>',
 				'<p class="u-text-r-m u-lineHeight-l u-textSecondary">',
 					"SPID, il Sistema Pubblico di Identità Digitale, è la soluzione che ti permette di accedere a tutti i servizi online della Pubblica Amministrazione con un'unica Identità Digitale (username e password) utilizzabile da computer, tablet e smartphone.",
 				'</p>',
