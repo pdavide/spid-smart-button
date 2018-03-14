@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700,900);
 
+body {
+    overflow: hidden;
+}
+
 .agid-font {
     font-family: "Titillium Web", HelveticaNeue, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
 }
@@ -94,7 +98,7 @@
 #agid-spid-panel-content {
     display: block;
     width: 90vw;
-    overflow: auto;
+    overflow: hidden;
     margin: 70px auto 100px;
 
     #agid-spid-enter-title-page {
@@ -571,8 +575,8 @@
         width: 165px;
     }
 
-    #agid-cancel-access-button {
-        margin: 0 12px;
+    #agid-cancel-access-container {
+        margin: 0 6px;
     }
 }
 
