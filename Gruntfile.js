@@ -120,12 +120,14 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'dist/agid-spid-enter.min.<%= pkg.version %>.js': [
+                        'node_modules/babel-polyfill/dist/polyfill.min.js', // Polyfill per i browser che non supportano ES6
                         'src/js/agid-spid-enter.js',
                         'src/js/agid-spid-enter-tpl.js',
                         'src/js/agid-spid-enter-i18n.js',
                         'src/js/agid-spid-enter-config.js'
                     ],
                     'dist/agid-spid-enter.min.latest.js': [
+                        'node_modules/babel-polyfill/dist/polyfill.min.js', // Polyfill per i browser che non supportano ES6
                         'src/js/agid-spid-enter.js',
                         'src/js/agid-spid-enter-tpl.js',
                         'src/js/agid-spid-enter-i18n.js',
