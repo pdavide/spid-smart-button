@@ -12,10 +12,10 @@ if (stripNonDigits(supportedNodeVersion) !== stripNonDigits(currentNodeVersion))
 
 if (stripNonDigits(supportedNodeVersion) < stripNonDigits(currentNodeVersion)) {
     console.log('current version detected is ahead:', currentNodeVersion);
-    console.log('If anything is wrong with dependencies install try downgranding your node.js version\n\n');
+    console.log('If anything is wrong with depencies install try downgranding your node.js version\n\n');
 }
 
 if (stripNonDigits(supportedNodeVersion) > stripNonDigits(currentNodeVersion)) {
     console.log('current version detected is behind:', currentNodeVersion);
-    console.log('If anything is wrong with dependencies install try upgrading your node.js version\n\n');
+    console.log('If anything is wrong with depencies install try upgrading your node.js version\n\n');
 }
