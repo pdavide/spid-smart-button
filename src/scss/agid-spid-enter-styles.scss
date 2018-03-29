@@ -592,7 +592,7 @@
     border: 0;
     cursor: pointer;
     outline: 0;
-    display: inline-block;
+    display: inline-block !important;
 
     &:hover,
     &:focus {
