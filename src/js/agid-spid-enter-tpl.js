@@ -3,7 +3,7 @@ window.AgidSpidEnter.prototype.tpl = {
     spidMainContainers: function () {
         return [
             '<div id="agid-spid-enter">', '</div>',
-            '<div id="agid-infomodal" class="modal" aria-live="assertive" tabindex="0" hidden>', '</div>'
+            '<div id="agid-infomodal" class="spid-modal" aria-live="assertive" tabindex="0" hidden>', '</div>'
         ].join('');
     },
 
@@ -117,7 +117,7 @@ window.AgidSpidEnter.prototype.tpl = {
 
     infoModalContent: function (htmlContent) {
         return [
-                '<div class="modal-content agid-font">',
+                '<div class="spid-modal-content agid-font">',
                     '<button id="closemodalbutton"',
                         'class="close agid-navigable"',
                         'tabindex="0"',
