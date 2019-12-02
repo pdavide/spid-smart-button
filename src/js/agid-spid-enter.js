@@ -180,7 +180,7 @@ window.AgidSpidEnter = function () {
     }
 
     function addContainersWrapper(wrapperID) {
-        agidSpidEnterWrapper = document.createElement('section');
+        agidSpidEnterWrapper = document.createElement('div');
 
         agidSpidEnterWrapper.id  = wrapperID;
         hideElement(agidSpidEnterWrapper);

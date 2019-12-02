@@ -3,7 +3,7 @@ window.AgidSpidEnter.prototype.tpl = {
     spidMainContainers: function () {
         return [
             '<div id="agid-spid-enter">', '</div>',
-            '<div id="agid-infomodal" class="spid-modal" aria-live="assertive" tabindex="0" hidden>', '</div>'
+            '<div id="agid-infomodal" class="spid-modal" aria-live="assertive" aria-atomic="true" tabindex="0" hidden>', '</div>'
         ].join('');
     },
 
@@ -21,11 +21,11 @@ window.AgidSpidEnter.prototype.tpl = {
             '<div id="agid-spid-enter-anim"></div>',
             '<section id="agid-spid-panel-select" aria-labelledby="agid-spid-enter-title-page" tabindex="0">',
                 '<header id="agid-spid-panel-header">',
-                    '<nav class="agid-spid-panel-back agid-spid-panel-element" aria-controls="agid-spid-panel-select">',
+                    '<div class="agid-spid-panel-back agid-spid-panel-element" aria-controls="agid-spid-panel-select">',
                         '<button tabindex="0" id="agid-spid-panel-close-button" class="agid-spid-button agid-navigable" aria-labelledby="agid-cancel-access-button">',
                             this.tpl.svgWithPngFallback.call(this, 'img/x-icon', this.getI18n('naviga_indietro')),
                         '</button>',
-                    '</nav>',
+                    '</div>',
                     '<div class="agid-spid-panel-logo agid-spid-panel-element">',
                         this.tpl.svgWithPngFallback.call(this, 'img/spid-logo-c-lb', this.getI18n('alt_logo_SPID')),
                     '</div>',
@@ -44,7 +44,7 @@ window.AgidSpidEnter.prototype.tpl = {
                             '</button>',
                         '</div>',
                         '<div id="agid-logo-container" aria-hidden="true">',
-                            this.tpl.svgWithPngFallback.call(this, 'img/agid-logo-bb-short'),
+                            this.tpl.svgWithPngFallback.call(this, 'img/agid-logo-bb-short', this.getI18n('agid')),
                         '</div>',
                     '</div>',
                 '</div>',
